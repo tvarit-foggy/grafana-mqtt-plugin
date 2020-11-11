@@ -37,6 +37,18 @@ export const defaultQuery: Partial<Query> = {
   json_time_bucket: 1000000,
 };
 
+export interface Certificate {
+  client: string;
+  id: string;
+  status: string;
+  topic: string;
+}
+
+export interface CreateCertificateFormModel {
+  inputTopicPrefix: string;
+  inputClientIdPrefix: string;
+}
+
 /**
  * These are options configured for each DataSource instance
  */
